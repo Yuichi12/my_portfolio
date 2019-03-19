@@ -561,7 +561,7 @@ img {
 .p-form-wrapper {
   background: #fff;
   padding: 4rem;
-  width: 50rem;
+  width: 70rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -597,7 +597,7 @@ img {
 }
 
 .p-form-text {
-  height: 20rem;
+  height: 30rem;
 }
 
 .p-form-count {

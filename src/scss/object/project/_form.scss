@@ -6,7 +6,7 @@
   &-wrapper {
     background: #fff;
     padding: $space_3l;
-    width: 50rem;
+    width: 70rem;
 
     @include mq(md) {
       box-sizing: border-box;
@@ -38,7 +38,7 @@
   }
 
   &-text {
-    height: 20rem;
+    height: 30rem;
   }
 
   &-count {
