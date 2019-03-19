@@ -1,0 +1,67 @@
+.p-skill {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @include mq(sm) {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-row {
+    display: flex;
+
+    @include mq(lg) {
+      display: table;
+      margin: 0 auto;
+    }
+
+    @include mq(md) {
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  &-list {
+    color: #000;
+    padding: $space_xl;
+
+    @include mq(lg) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &-item {
+    display: table;
+    font-size: $font-size_xl;
+    margin-bottom: $space_xl;
+    position: relative;
+    z-index: 0;
+
+    @include mq(md) {
+      font-size: $font-size_l;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #333;
+      transform: scale(0, 1);
+      transform-origin: center top;
+      transition: transform .3s;
+    }
+
+    &:hover::after {
+      transform: scale(1, 1);
+    }
+  }
+}

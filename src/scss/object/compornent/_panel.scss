@@ -1,0 +1,34 @@
+.c-panel {
+  background: $bg-color_main;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  justify-content: center;
+  margin-bottom: $space_xl;
+  padding: $space_xxl;
+  width: 30rem;
+
+  &-group {
+    display: flex;
+    justify-content: space-around;
+    @include mq(sm){
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  &__header {
+    margin-bottom: $space_xl;
+    text-align: center;
+  }
+
+  &__body {
+    margin-bottom: $space_xxl;
+  }
+
+  &__footer {
+    text-align: center;
+  }
+}

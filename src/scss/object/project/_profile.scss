@@ -1,0 +1,25 @@
+.p-prof {
+  background: url(../img/hipster-stuff.jpg);
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  &__txt {
+    background: $bg-color_main;
+    color: #fff;
+    display: inline-block;
+    font-size: $font-size_xxl;
+    overflow: hidden;
+    padding: $space_xl;
+  }
+
+  &-term {
+    clear: left;
+    float: left;
+    margin-right: $space_xl;
+  }
+
+  &-definition {
+    float: left;
+  }
+}

@@ -1,0 +1,14 @@
+.c-load {
+  background: #fff;
+  height: 100vh;
+  line-height: 50vh;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  &-img {
+    width: 60px;
+    
+  }
+}

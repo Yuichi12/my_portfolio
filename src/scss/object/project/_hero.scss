@@ -1,0 +1,15 @@
+.p-hero {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  &__ttl {
+    font-size: $font-size_3l;
+    @include mq(sm) {
+      font-size: $font-size_l;
+    }
+  }
+}

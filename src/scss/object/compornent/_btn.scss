@@ -1,0 +1,19 @@
+.c-btn {
+  background: rgba(121, 176, 68, .5);
+  border: 1px solid #777;
+  color: #fff;
+  display: inline-block;
+  padding: $space_s $space_l;
+
+  &:hover {
+    background: rgba(121, 176, 68, 1);
+    color: #fff;
+  }
+
+  &-submit {
+    border-radius: 5px;
+    display: block;
+    font-size: $font-size_xl;
+    padding: $space_s $space_l;
+  }
+}

@@ -1,0 +1,57 @@
+.p-form {
+  background: #f6f5f4;
+  display: flex;
+  justify-content: center;
+
+  &-wrapper {
+    background: #fff;
+    padding: $space_3l;
+    width: 50rem;
+
+    @include mq(md) {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+
+  &-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    @include mq(sm) {
+      width: 100%;
+    }
+  }
+
+  &-group {
+    display: block;
+    margin-bottom: $space_xl;
+    width: 100%;
+  }
+
+  &-control {
+    display: block;
+    font-size: $font-size_xl;
+    width: 100%;
+  }
+
+  &-text {
+    height: 20rem;
+  }
+
+  &-count {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-submit {
+    margin: 0 auto;
+
+    @include mq(sm) {
+      width: 100%;
+    }
+  }
+}

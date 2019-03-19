@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="">
+  <link rel="icon" href="" sizes="" type="image/png">
+  <!-- スマホ用アイコン画像 -->
+  <link rel="apple-touch-icon-precomposed" href="">
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+
+  <div class="c-load js-load-bg">
+    <img src="./dist/img/gif-load.gif" alt="" class="c-load-img">
+  </div>
+
+  <header class="p-header js-show-header" id="header">
+    <div class="p-header__left">
+      <h1 class="p-header__title">Portfolio</h1>
+    </div>
+
+    <div class="c-menu-trigger js-toggle-sp-menu">
+      <span class="c-menu-trigger__bar"></span>
+      <span class="c-menu-trigger__bar"></span>
+      <span class="c-menu-trigger__bar"></span>
+    </div>
+
+    <div class="p-header__right js-toggle-bg">
+      <ul class="p-menu js-toggle-target">
+        <li class="p-menu-item"><a href="index.html" class="p-menu-link js-menu-link">TOP</a></li>
+        <li class="p-menu-item"><a href="#profile" class="p-menu-link js-menu-link"> PROFILE</a></li>
+        <li class="p-menu-item"><a href="#skill" class="p-menu-link js-menu-link">LEARNING</a></li>
+        <li class="p-menu-item"><a href="#portfolio" class="p-menu-link js-menu-link"> PORTFOLIO</a></li>
+        <li class="p-menu-item"><a href="#contact" class="p-menu-link js-menu-link"> CONTACT</a></li>
+      </ul>
+    </div>
+  </header><!-- header -->
+
+  <section class="p-hero" id="hero">
+    <h2 class="p-hero__ttl js-hero-anime">Welcome to My Portfolio</h2>
+  </section><!-- hero -->
+
+  <section class="p-prof" id="profile">
+    <div class="c-container">
+      <h2 class="c-container__title u-font-color_white js-fadein">PROFILE</h2>
+      <dl class="p-prof__txt">
+        <dt class="p-prof-term">NAME :</dt>
+        <dd class="p-prof-definition">Yuichi Nabeshima</dd>
+        <dt class="p-prof-term">AGE :</dt>
+        <dd class="p-prof-definition">31</dd>
+        <dt class="p-prof-term">SEX :</dt>
+        <dd class="p-prof-definition">Male</dd>
+        <dt class="p-prof-term">ADDRESS :</dt>
+        <dd class="p-prof-definition">Fukushima, Japan</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="p-skill" id="skill">
+    <div class="c-container">
+      <h2 class="c-container__title">LEARNING</h2>
+      <div class="p-skill-wrapper">
+        <div class="p-skill-row">
+          <ul class="p-skill-list">
+            <li class="p-skill-item">HTML&amp;CSS</li>
+            <li class="p-skill-item">JavaScript</li>
+            <li class="p-skill-item">PHP</li>
+            <li class="p-skill-item">jQuery</li>
+          </ul>
+          <ul class="p-skill-list">
+            <li class="p-skill-item">Bootstrap</li>
+            <li class="p-skill-item">FuelPHP</li>
+            <li class="p-skill-item">Gulp</li>
+            <li class="p-skill-item">Webpack</li>
+          </ul>
+        </div><!-- row -->
+        <div class="p-skill-row">
+          <ul class="p-skill-list">
+            <li class="p-skill-item">Sass</li>
+            <li class="p-skill-item">BEM&amp;Flocss</li>
+            <li class="p-skill-item">Git&amp;GitHub</li>
+            <li class="p-skill-item">SQL</li>
+          </ul>
+          <ul class="p-skill-list">
+            <li class="p-skill-item">ResponsiveDesign</li>
+            <li class="p-skill-item">React.js</li>
+            <li class="p-skill-item">Vue.js</li>
+            <li class="p-skill-item">Backbone.js</li>
+          </ul>
+        </div><!-- row -->
+      </div><!-- skill-wrapper -->
+    </div><!-- container -->
+  </section>
+
+  <section class="p-portfolio" id="portfolio">
+    <div class="c-container">
+      <h2 class="c-container__title u-font-color_white">PORTFOLIO</h2>
+      <div class="c-panel-group">
+        <div class="c-panel">
+          <div class="c-panel__header">
+            記事投稿サイト
+          </div>
+          <div class="c-panel__body">
+            PHPで実装したwebサイトの基本的な機能を備えた記事投稿サイトです。
+          </div>
+          <div class="c-panel__footer">
+            <a href="https://yuichilog.com/sample_media_php" class="c-btn js-toggle-modal">Go WebSite</a>
+          </div>
+        </div><!-- c-panel -->
+        <div class="c-panel">
+          <div class="c-panel__header">
+            記事投稿サイト
+          </div>
+          <div class="c-panel__body">
+            こちらはLaravelで実装したwebサイトの基本的な機能を備えた記事投稿サイトです。
+          </div>
+          <div class="c-panel__footer">
+            <a href="https://yuichilog.com" class="c-btn js-toggle-modal">Go Website</a>
+          </div>
+        </div><!-- c-panel -->
+      </div><!-- panel-list -->
+    </div><!-- container -->
+  </section>
+
+  <section class="p-form" id="contact">
+    <div class="c-container">
+      <h2 class="c-container__title">CONTACT</h2>
+      <form class="p-form-wrapper" method="post">
+        <div class="p-form-container">
+          <label for="" class="p-form-group">
+            お名前
+            <input type="text" class="p-form-control">
+          </label>
+          <label for="" class="p-form-group">
+            メールアドレス
+            <input type="text" class="p-form-control">
+          </label>
+          <label for="" class="p-form-group">
+            本文
+            <textarea name="" id="" cols="30" rows="10" class="p-form-control p-form-text js-get-count"></textarea>
+            <p class="p-form-count"><span class="js-count-show">0</span>/500</p>
+          </label>
+          <button type="submit" value="Submit" class="p-form-submit c-btn-submit">Submit</button>
+        </div>
+      </form><!-- form-wrapper -->
+    </div><!-- container -->
+  </section>
+
+  <footer class="p-footer" id="footer">
+    <p>&copy;All Rights Reserve</p>
+  </footer>
+
+  <div class="c-modal-content" id="modal">
+    <div class="c-modal-header">
+      <h2 class="c-modal-header__ttl">メディア系記事投稿サイト</h2>
+      <p class="c-modal-header__txt">使用言語 : PHP </p>
+    </div>
+    <div class="c-modal-body">
+      <p class="c-modal-body__txt"></p>
+    </div>
+  </div><!-- modal -->
+
+  <script src="dist/js/bundle.js"></script>
+</body>
+
+</html>
